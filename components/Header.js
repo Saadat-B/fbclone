@@ -20,7 +20,6 @@ const Header = () => {
     <div>
       <h1>Header</h1>
 
-      {/* Left  */}
       <div className="flex items-center">
         <Image
           src="https://links.papareact.com/5me"
@@ -33,8 +32,6 @@ const Header = () => {
           <input type="text" placeholder="Search Facebook" />
         </div>
       </div>
-      {/* Center  */}
-      {/* Right  */}
     </div>
   );
 };
