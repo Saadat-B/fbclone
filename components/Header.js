@@ -18,7 +18,7 @@ import {
 const Header = () => {
   return (
     <div>
-      <h1>Header</h1>
+      {/* Left  */}
 
       <div className="flex items-center">
         <Image
@@ -29,9 +29,16 @@ const Header = () => {
         />
         <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2 ">
           <MagnifyingGlassIcon className="h-6" />
-          <input type="text" placeholder="Search Facebook" />
+          <input
+            className="flex ml-2 items-center bg-transparent outline-none placeholder-gray-500"
+            type="text"
+            placeholder="Search Facebook"
+          />
         </div>
       </div>
+
+      {/* Center  */}
+      {/* Right  */}
     </div>
   );
 };
