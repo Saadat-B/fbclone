@@ -1,7 +1,9 @@
 import { useSession } from "next-auth/react";
 import Head from "next/head";
+import Feed from "../components/Feed";
 import Header from "../components/Header";
 import Login from "../components/Login";
+import Sidebar from "../components/Sidebar";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -14,19 +16,19 @@ export default function Home() {
       </Head>
       <title>Facebook</title>
       <Header />
-      <main>
-        {/* Sidebar  */}
-        {/* Feed  */}
+      <main className="flex">
+        <Sidebar />
+        <Feed />
         {/* Widgets  */}
       </main>
     </div>
   );
 }
 
-// With the useSession hook you dont need this below
+//* With the useSession hook you dont need this below
 
 // export async function getServerSideProps(context) {
-//   // Get the user
+// Get the user
 //   const session = await getSession(context);
 
 //   return {
