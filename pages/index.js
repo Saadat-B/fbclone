@@ -8,6 +8,7 @@ import Sidebar from "../components/Sidebar";
 export default function Home() {
   const { data: session } = useSession();
   if (!session) return <Login />;
+
   return (
     <div>
       <Head>
